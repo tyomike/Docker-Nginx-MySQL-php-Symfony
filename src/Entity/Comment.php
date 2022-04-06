@@ -53,6 +53,10 @@ class Comment
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $photoFilename;
+    /**
+     * @ORM\Column(type="string", length=255,  options={"default": "submitted"})
+     */
+    private $xstate = 'submitted';
 
     public function __toString(): string
     {
@@ -143,5 +147,16 @@ class Comment
         $this->createdAt = new \DateTimeImmutable();
     }
 
+    public function getXstate(): ?string
+    {
+        return $this->xstate;
+    }
+
+    public function setXstate(string $xstate): self
+    {
+        $this->xstate = $xstate;
+
+        return $this;
+    }
 
 }
