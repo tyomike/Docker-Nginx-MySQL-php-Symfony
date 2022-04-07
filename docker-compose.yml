@@ -77,7 +77,10 @@ services:
         - ./var/rabbitmq:/var/lib/rabbitmq
       networks:
         - symfony
-
+    mailcatcher:
+      image: schickling/mailcatcher
+      ports:
+        - 1025:1080
 networks:
   symfony:
     name: symfony
