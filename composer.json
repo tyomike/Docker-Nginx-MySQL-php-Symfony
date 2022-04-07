@@ -68,6 +68,7 @@
 		"symfony/twig-bundle": "5.4.*",
 		"symfony/validator": "5.4.*",
 		"symfony/web-link": "5.4.*",
+		"symfony/workflow": "5.4.*",
 		"symfony/yaml": "5.4.*",
 		"twig/extra-bundle": "^2.12|^3.0",
 		"twig/intl-extra": "^3",
@@ -80,6 +81,7 @@
 	},
 	"require-dev": {
 		"bamarni/composer-bin-plugin": "^1.4",
+		"clue/graph-composer": "^1.1",
 		"dama/doctrine-test-bundle": "^6",
 		"doctrine/doctrine-fixtures-bundle": "^3.4",
 		"ergebnis/composer-normalize": "^2.16",

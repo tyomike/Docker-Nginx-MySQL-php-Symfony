@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb0692cd68ee9ab2f61673d53d8f494d",
+    "content-hash": "d4e00218efd6987037cd1b7ee2ae3fd6",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -8383,6 +8383,88 @@
             "time": "2022-01-02T09:53:40+00:00"
         },
         {
+            "name": "symfony/workflow",
+            "version": "v5.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/workflow.git",
+                "reference": "5bf479092b9b4c25fd8eb5416146ffa8de4a5393"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/workflow/zipball/5bf479092b9b4c25fd8eb5416146ffa8de4a5393",
+                "reference": "5bf479092b9b4c25fd8eb5416146ffa8de4a5393",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/event-dispatcher": "<4.4"
+            },
+            "require-dev": {
+                "psr/log": "^1|^2|^3",
+                "symfony/dependency-injection": "^4.4|^5.0|^6.0",
+                "symfony/event-dispatcher": "^4.4|^5.0|^6.0",
+                "symfony/expression-language": "^4.4|^5.0|^6.0",
+                "symfony/security-core": "^4.4|^5.0|^6.0",
+                "symfony/validator": "^4.4|^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Workflow\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Grégoire Pineau",
+                    "email": "lyrixx@lyrixx.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides tools for managing a workflow or finite state machine",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "petrinet",
+                "place",
+                "state",
+                "statemachine",
+                "transition",
+                "workflow"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/workflow/tree/v5.4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-02T09:53:40+00:00"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v5.4.3",
             "source": {
@@ -8790,6 +8872,132 @@
                 "source": "https://github.com/bamarni/composer-bin-plugin/tree/v1.5.0"
             },
             "time": "2022-02-22T21:01:25+00:00"
+        },
+        {
+            "name": "clue/graph",
+            "version": "v0.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphp/graph.git",
+                "reference": "d1661c0a0e011a8550fa60ae5354f230d1555909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphp/graph/zipball/d1661c0a0e011a8550fa60ae5354f230d1555909",
+                "reference": "d1661c0a0e011a8550fa60ae5354f230d1555909",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3 || ^5.7 || ^4.8.35"
+            },
+            "suggest": {
+                "graphp/algorithms": "Common graph algorithms, such as Dijkstra and Moore-Bellman-Ford (shortest path), minimum spanning tree (MST), Kruskal, Prim and many more..",
+                "graphp/graphviz": "GraphViz graph drawing / DOT output"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Fhaculty\\Graph\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lück",
+                    "email": "christian@clue.engineering"
+                }
+            ],
+            "description": "GraPHP is the mathematical graph/network library written in PHP.",
+            "homepage": "https://github.com/graphp/graph",
+            "keywords": [
+                "edge",
+                "graph",
+                "mathematical",
+                "network",
+                "vertex"
+            ],
+            "support": {
+                "issues": "https://github.com/graphp/graph/issues",
+                "source": "https://github.com/graphp/graph/tree/v0.9.3"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-12-30T09:22:01+00:00"
+        },
+        {
+            "name": "clue/graph-composer",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clue/graph-composer.git",
+                "reference": "eff70fe2af7704b15cf675fcad663abe42034153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clue/graph-composer/zipball/eff70fe2af7704b15cf675fcad663abe42034153",
+                "reference": "eff70fe2af7704b15cf675fcad663abe42034153",
+                "shasum": ""
+            },
+            "require": {
+                "clue/graph": "^0.9.1",
+                "graphp/graphviz": "^0.2.2",
+                "jms/composer-deps-analyzer": "^1.0.1",
+                "php": ">=5.3.6",
+                "symfony/console": "^5.0 || ^4.0 || ^3.0 || ^2.1"
+            },
+            "require-dev": {
+                "clue/phar-composer": "^1.1",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "bin": [
+                "bin/graph-composer"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Clue\\GraphComposer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Dependency graph visualization for composer.json",
+            "homepage": "https://github.com/clue/graph-composer",
+            "keywords": [
+                "dependency graph",
+                "visualize composer",
+                "visualize dependencies"
+            ],
+            "support": {
+                "issues": "https://github.com/clue/graph-composer/issues",
+                "source": "https://github.com/clue/graph-composer/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://clue.engineering/support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/clue",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-03-26T12:02:56+00:00"
         },
         {
             "name": "dama/doctrine-test-bundle",
@@ -9296,6 +9504,91 @@
                 }
             ],
             "time": "2021-12-13T16:54:56+00:00"
+        },
+        {
+            "name": "graphp/graphviz",
+            "version": "v0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/graphp/graphviz.git",
+                "reference": "5cc4466223ca46fffa196d1e762fae164319c229"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/graphp/graphviz/zipball/5cc4466223ca46fffa196d1e762fae164319c229",
+                "reference": "5cc4466223ca46fffa196d1e762fae164319c229",
+                "shasum": ""
+            },
+            "require": {
+                "clue/graph": "~0.9.0|~0.8.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Graphp\\GraphViz\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "GraphViz graph drawing for the mathematical graph/network library GraPHP.",
+            "homepage": "https://github.com/graphp/graphviz",
+            "keywords": [
+                "dot output",
+                "graph drawing",
+                "graph image",
+                "graphp",
+                "graphviz"
+            ],
+            "support": {
+                "issues": "https://github.com/graphp/graphviz/issues",
+                "source": "https://github.com/graphp/graphviz/tree/v0.2.2"
+            },
+            "time": "2019-10-04T13:30:55+00:00"
+        },
+        {
+            "name": "jms/composer-deps-analyzer",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/composer-deps-analyzer.git",
+                "reference": "6e72a866c40a98e63efb6bb059a2bbaadcb8aa15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/composer-deps-analyzer/zipball/6e72a866c40a98e63efb6bb059a2bbaadcb8aa15",
+                "reference": "6e72a866c40a98e63efb6bb059a2bbaadcb8aa15",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "symfony/filesystem": "2.1.*",
+                "symfony/process": "2.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "description": "Builds a Dependency Graph from a composer.json file",
+            "support": {
+                "issues": "https://github.com/schmittjoh/composer-deps-analyzer/issues",
+                "source": "https://github.com/schmittjoh/composer-deps-analyzer/tree/master"
+            },
+            "time": "2016-11-09T16:59:19+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
