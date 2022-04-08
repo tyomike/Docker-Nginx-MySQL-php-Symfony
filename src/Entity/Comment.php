@@ -56,7 +56,7 @@ class Comment
     /**
      * @ORM\Column(type="string", length=255,  options={"default": "submitted"})
      */
-    private $xstate = 'submitted';
+    private $state = 'submitted';
 
     public function __toString(): string
     {
@@ -147,14 +147,14 @@ class Comment
         $this->createdAt = new \DateTimeImmutable();
     }
 
-    public function getXstate(): ?string
+    public function getState(): ?string
     {
-        return $this->xstate;
+        return $this->state;
     }
 
-    public function setXstate(string $xstate): self
+    public function setState(string $state): self
     {
-        $this->xstate = $xstate;
+        $this->state = $state;
 
         return $this;
     }
